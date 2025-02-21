@@ -1,0 +1,43 @@
+Task 1
+
+1. request user to enter a positive number repeatly
+
+   if the user enters 0
+
+   then determine and output the largest of the inputted numbers
+
+2. request user to enter 10 random numbers
+   
+   determine the arbitrary number of integers
+
+   return their arithmetic average 
+
+3. request grocery list from user
+
+   determine all products that are already purchased
+   
+   print out products (in alphabetical order) that are left to buy
+
+4. X: First Number
+
+   Step 1- Start
+
+   Y: Second Number
+
+   Step 2- Read X, Y 
+
+   Step 3- Calculate S = X+Y
+
+   Step 4- Calculate A = S/2
+
+   S: Sum (X+Y)
+
+   Step 5- Calculate P = X*Y
+
+   A: Average (S/2)
+
+   Step 6- Print S, A, P
+
+   P: Product (X*Y)
+
+   Step 7- Stop
