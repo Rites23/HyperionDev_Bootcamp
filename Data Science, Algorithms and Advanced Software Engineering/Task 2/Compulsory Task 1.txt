@@ -1,0 +1,32 @@
+Discuss any ambiguities or omissions in the statement of
+requirements for the part of a ticket-issuing system:
+
+- How should the system respond if a invalid card is used?
+- Will the customer be able to cancel a request if a mistake has been made?
+- Can a customer buy several tickets for the same destination together or must they be bought individually?
+- What kind of input device (Touchscreen or Keyboard) does the system support?
+- Does it print a receipt for ticket details? 
+- Must the customer press the start button again if they wish to purchase another ticket to a different destination? 
+- What would happen should a customer try to put in their card before selecting a destination? 
+- Train departure and arrival times. Will customers have to buy tickets for a specific train, or for any trip along the route? 
+
+Write a set of non-functional requirements for the ticket-issuing
+system above. You are free to make assumptions regarding the
+system based on ambiguities or omissions you identified previously.
+
+- After the customer presses a button on the machine, the display should be updated within 0.5 seconds.
+- The ticket issuing time after credit card validation has been received should not exceed 10 seconds.
+- When validating credit cards, the display should provide a status message for customers indicating that activity is taking place.
+  This tells the customer that the potentially time consuming activity of validation is still in progress and that the system has not simply failed.
+- The system shall continue to function as long as there is roll of ticket paper in the machine, and a network connection is provided for the destination database and credit transactions.
+- Upon receipt of the destination from the user, the database shall be accessed to determine the distance from the unit’s location, to the desired destination, and calculate the appropriate fee.
+
+References:
+
+Aida, Ainaa, Atifah, Atiqah, Asyikin, Ilmi, Khairunnisa. Available at:
+http://srd2dis2018.blogspot.com/2019/02/group-2-requirements-for-ticket-issuing.html (Accessed: 23 November 2021)
+
+bsjavalovers. Available at:
+https://bsjavalovers.files.wordpress.com (Accessed: 23 November 2021)
+
+

@@ -1,0 +1,46 @@
+Explain the difference between data and information.
+
+- Data describes raw pieces of input with no context or meaning.
+- Information is processed and formatted data that can now be used to find patterns in the data, or even be able to make predictions
+  based on picked-up trends. In order to do this, though, the data itself needs to be
+  accurate and formatted in a way that makes it possible to process correctly.
+ 
+Research “sparse data”. What is the alternative? What are the differences between the two?
+
+- An alternative would be dense data. 
+- "sparse" and "dense" often refer to the number of zero vs. non-zero elements in an array (e.g. vector or matrix). 
+  A sparse array is one that contains mostly zeros and few non-zero entries. A dense array contains mostly non-zeros.
+  
+Research and list 3 relational DBMSes and 3 NoSQL DBMSes.
+
+- DBMS
+MySQL 
+PostgreSQL
+Oracle 
+
+- NoSQL DBMS
+MongoDB
+RavenDB
+Couchbase
+
+Look up “transaction consistency”. Describe it in your own words.
+
+- It is the highest level of isolation that allows an application to read only commited data and guarantees that the transaction 
+  has a consistent view of the database, as though no other transactions were active. It will be read locked until the transaction ends. 
+  
+Given the file below, answer the following questions:
+○ How many records does the file contain?
+○ How many fields are there per record?
+
+- The file contains five records (21-5U through 29-7P) and each of the records is composed of five fields (PROJECT_CODE through PROJECT_BID_PRICE.).
+
+Refrences : 
+
+Stack Exchange. Available at:
+https://stats.stackexchange.com/questions/266996/what-do-the-terms-dense-and-sparse-mean-in-the-context-of-neural-networks (Accessed: 25 November 2021)
+
+Trust radius. Available at:
+https://www.trustradius.com/nosql-databases(Accessed: 25 November 2021)
+
+
+  

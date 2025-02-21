@@ -1,0 +1,106 @@
+LAYERED ARCHITECTURE
+
+Organizes the system into layers with related functionality associated
+with each layer. A layer provides services to the layer above it so the
+lowest-level layers represent core services that are likely to be used
+throughout the system.
+
+Example: 
+A layered model of a system for sharing copyright documents held indifferent libraries: LIBSYS.
+General desktop applications and e-commerce web applications.
+
+Used when:
+•building new facilities on top of existing systems
+•the development is spread across several teams with each team responsibility for a layer of functionality.
+•there is a requirement for multi-level security.
+
+Allows replacement of entire layers so long as the interface is
+maintained. Redundant facilities (e.g., authentication) can be provided in
+each layer to increase the dependability of the system.
+
+REPOSITORY ARCHITECTURE
+
+All data in a system is managed in a central repository that is accessible to all
+system components. Components do not interact directly, only through the
+repository. 
+
+Example:
+An IDE where the components use a repository of system design information.
+Each software component generates information which is then available for
+use by other tools.
+
+When used: 
+•when large volumes of information are generated that has to be stored for a long time.
+•in data-driven systems where the inclusion of data in the repository triggers an action or tool.
+
+Components can be independent—they do not need to know of the existence
+of other components. Changes made by one component can be propagated to
+all components. All data can be managed consistently (e.g., backups done at
+the same time) as it is all in one place. 
+
+CLIENT-SERVER ARCHITECTURE
+
+In a client–server architecture, the functionality of the system is organized
+into services, with each service delivered from a separate server. Clients
+are users of these services and access servers to make use of them.
+
+Example:
+Web Servers, File Servers
+
+When used: 
+Used when data in a shared database has to be accessed from a range of
+locations. Because servers can be replicated, may also be used when the
+load on a system is variable.
+
+The principal advantage of this model is that servers can be distributed
+across a network. General functionality (e.g., a printing service) can be
+available to all clients and does not need to be implemented by all services.
+
+PIPE AND FILTER ARCHITECTURE
+
+The processing of the data in a system is organized so that each
+processing component (filter) is discrete and carries out one type
+of data transformation. The data flows (as in a pipe) from one
+component to another for processing. 
+
+Example: 
+The pipe and filter system used for processing invoices.
+
+Commonly used in data processing applications (both batch- and
+transaction-based) where inputs are processed in separate
+stages to generate related outputs.
+
+Easy to understand and supports transformation reuse. Workflow
+style matches the structure of many business processes.
+Evolution by adding transformations is straightforward. Can be
+implemented as either a sequential or concurrent system.
+
+Examples of systems combining two or more patterns:
+
+Model-View-Controller(MVC) and Layered Architecture
+
+- A Presentation Layer that sends content to browsers in the form of HTML/JS/CSS. This might leverage frameworks like React, Angular, Ember, Aurora, etc.
+- An Application Layer that uses an application server and processes the business logic for the application. This might be written in C#, Java, C++, Python, Ruby, etc.
+- A Data Layer which is a database management system that provides access to application data. This could be MSSQL, MySQL, or PostgreSQL, etc.
+
+Repository Architecture, Client-Server Architecture, Pipe and Filter Architecture, Layered Architecture
+
+A client-server system consists of programs or components which run on the client, and others which run on the server. Each of these components 
+can have a layer structure internally. One of these layer may be a repository layer (for example, for decoupling other parts of the program from the 
+database access code).
+
+Both the client components as well as the server components may contain a "business logic layer". And for certain kinds of business logic, it makes sense 
+for this layer to be structured internally by pipes and filters. For example, a 3D rendering engine on the client side can be structured by using a rendering 
+pipeline. A system which does heavily asynchronous batch processing on the server side (for example, for filling / updating a data ware house every night) 
+can have a batch processing pipeline.
+
+
+References:
+
+Ch6Architecture.key. Available at:
+https://userweb.cs.txstate.edu/~js236/201405/cs3398/ch6architecture.pdf (Accessed: 24 November 2021)
+
+stackexchange.com. Available at:
+https://softwareengineering.stackexchange.com/questions/412962/is-it-possible-to-use-more-than-one-software-architecture-pattern-in-a-single-so (Accessed: 24 November 2021)
+
+

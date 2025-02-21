@@ -1,0 +1,16 @@
+Use this table to illustrate one of each kind of anomaly described in the
+task. In a text file called anomalies.txt, how you would change the table
+and which anomaly that change would create.
+
+Update anomalies: Occurs when the same information is recorded in multiple rows.
+
+- In the PROD_NUM table, if the product number changes, then there are multiple updates that need to be made. If these
+  updates are not successfully completed across all rows, then an inconsistency occurs.
+
+Insertion anomalies: When there is data we cannot record until we know information for the entire row.
+
+- We cannot record a new INV_NUM until we also know the PROD_NUM, in order to create the record, we need to provide a primary key. 
+
+Deletion anomalies: When deletion of a row can cause more than one set of facts to be removed.
+
+- If removimg an INV_NUM, there will inconsistency especially if there was more then one entry. The data would be incorrect. 

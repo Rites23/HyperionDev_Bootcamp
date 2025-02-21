@@ -1,0 +1,32 @@
+Go to this website. Do you think the website has a good UI? Why or why
+not? Refer to the information given in the task and discuss both good and
+bad elements in the website’s UI.
+
+- Bad UI
+- No obvious customer support line besides a phone / number.
+- PNWX is outdated, a true fossil of a website.
+- Lack of contrast, grid system, and the overwhelming amount of information displayed on-screen.
+- Lack of online ordering system.
+- The fact that they serve serious potential clients tasked to navigate a not-so-serious looking website needed to be addressed.
+- Flash is dead.
+- Totally bad user expierence.
+
+Now go to this website. Do you think the website has a good UI? Why or
+why not? Refer to the information given in the task and discuss both good
+and bad elements in the website’s UI.
+
+- Good UI
+- Good navigation (easy to understand)
+- Good color scheme
+- Visually appealing interface
+- Clean layout
+- User friendly, feels safe and secure
+- Support function available
+- Website kept simple, easy to use
+- Modern look expierence
+
+References:
+
+Tim Dilich. Available at:
+https://www.tmd.design/pnwx (Accessed: 23 November 2021)
+

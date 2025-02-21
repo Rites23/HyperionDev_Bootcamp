@@ -1,0 +1,90 @@
+Do some research about the different approaches to deployment. What
+are the pros and cons of each? When would you use each approach?
+
+- Direct Deployment
+
+In the direct deployment approach, the newly developed sysyem is installed in 
+a machine and instanly makes the system ready to operate. This process is also 
+known as immediate cutover.
+
+Advantages:
+
+It removes the existing system totally when it is started to deploy into a machine;
+the old and new system are executed simultaneously for a minimun period.
+
+It is very easy to plan and execute the new system into a machine. 
+
+Disadvantages: 
+
+It is highly risky to execute the program, because the service may interrupt
+at any time. 
+
+- Parallel Deployment: 
+
+In this approach, the old and new systems operate in
+parallel when the new system is first introduced. After a while, once the new
+system is stable, the old system is switched off.
+
+Advantages: 
+
+The fastest option with a very brief overlap of old and new code being served.
+
+Disadvantages:
+
+The riskiest strategy - a bad deploy can impair all your servers. Will result 
+in some downtime for webservers that don't support live reloads.
+
+Phased Deployment: 
+
+In this approach, the new system is deployed in
+phases while the old system is still running. Once the new system is fully
+integrated and stable, the old system is switched off.
+
+Advantages:
+
+The primary advantage of a phased approach to implementation are: Better planning, 
+control, and testing in regards to rolling out the solution to end users.
+
+Disadvantages:
+
+Higher implementation cost
+Often requires additional interface
+Delay in ROI 
+May interfere with compliance
+
+A second-hand book shop is converting from a paper system to
+digital, and they've asked you to develop their catalogue software.
+After finishing, how do you deploy it and why?
+
+Direct Deployment 
+In this approach, there will be no need for the paper system. Everything will now be digital. 
+The new system will quickly be installed and made operational.
+
+A large retail chain has asked you to develop a more modern set of
+tools for their use, including point-of-sale systems, stock records,
+and customer service systems. After finishing, how do you deploy it
+and why?
+
+Parallel Deployment
+In this approach, the old and new systems operate in
+parallel when the new system is first introduced. This would also allow for 
+all the backups to take place. (eg. point-of-sale systems, stock records, and customer service systems).
+Once the new system is up and running with all the neccesary backups the old system can be turned off. 
+
+You have developed an alternate fire alarm system for a large
+shopping centre. This system's reliability is of utmost importance.
+After finishing, how do you deploy it and why?
+
+Phased Deployment
+The new system is deployed in
+phases while the old system is still running. Once the new system is fully
+integrated and stable, the old system is switched off.
+This is due to the reliability which is of utmost importance. 
+
+References:
+
+top-sage-resellers.com. Available at:
+https://www.top-sage-resellers.com/blog/big-bang-erp-implementation-vs-phased-approach-pros-and-cons (Accessed: 29 November 2021)
+
+help.cloud66.com. Available at:
+https://help.cloud66.com/rails/how-to-guides/deployment/parallel-deployment.html (Accessed: 29 November 2021)

@@ -1,0 +1,77 @@
+Briefly describe possible standards that might be used for these real-world
+products:
+○ Soap
+The soap needs to have the correct pH, the content of total fat needs to be right, free alkalinity/acidity, chloride content,  
+foam  height  and  alcohol  insoluble. There is standard set when the soap is being made.
+We use soap on a daily basis so its impaortant to make sure the correct process is followed during manufacturing
+to avoid any issues when used by humans. (eg. skin rashes, irritation, allergies, cancer etc)
+
+○ Aeroplane
+Standards in Aviation is very important in order to build customer trust and satisfaction. 
+It ensures the products or services are up to the standard before delivering to the customer. 
+Safety is a prime concern in the aviation industry, and safety comes with quality. 
+There is a system that also provides information on inspection to ensure that all maintenance 
+on aircraft is properly performed according to the manufacturer’s instructions.
+
+○ Curry
+Spice quality testing 
+Inspection
+Cleanliness
+Right amount of ingredients
+
+Explain why a high-quality software process should lead to high-quality
+software products. Discuss possible problems with this system of quality
+management.
+
+A manufacturing process involves configuring, setting up, and operating the machines involved in the process. 
+Once the machines are operating correctly and manufacturing systems are calibrated, they can run repeatedly to achieve high 
+quality products. Process quality management and improvement can lead to a fewer defects in the software.
+
+However, software development is a creative rather than mechanical process, so the influence of individual skills and experience 
+is significant. External factors such as novelty of an application or commercial pressure for an early product release affect the 
+product quality irrespective of the process used.
+
+Explain why program inspections are an effective technique for
+discovering errors in a program. What types of errors are unlikely to be
+discovered through inspections?
+
+Program inspections are effective for the following reasons: 
+
+1. They can find several faults in one pass without being concerned about interference between program faults. 
+
+2. They bring a number of people with different experience of different types of errors. Hence, the team approach 
+   offers greater coverage than any individual can bring. 
+
+3. They force the program author to re-examine the program in detail - this often reveals errors or misunderstandings. 
+
+The types of errors that inspections are unlikely to find are specification errors or errors that are based on a misunderstanding 
+of the application domain (unless there are domain experts in the team)
+
+Why is it difficult to validate the relationships between internal product
+attributes and external attributes?
+
+The basic difficulty arises because the external attributes such as maintainability are not solely dependent on a small 
+number of internal product attributes; there are more factors that can affect this. 
+
+While the complexity of a system may influence the said system's maintainability, other issues such as the choice of variable names, 
+system documentation and, particularly, the skills of the people doing the maintenance have such a large effect on the process that they 
+may underplay any maintainability differences arising from different levels of complexity in the system. 
+
+It is important to know that the submission above does not contradict experiments where a relationship 
+between maintainability and complexity is established – however, there is not enough evidence at the moment to generalize this.
+
+Many other factors (both tangible and non-tangible) will affect the relationship
+
+References:
+
+Aviationhunt. Available at:
+https://www.aviationhunt.com/aviation-quality-assurance/ (Accessed:02 December 2021)
+
+cpentalk. Available at:
+https://cpentalk.com/1296/software-software-products-possible-problems-management (Accessed:02 December 2021)
+
+cpentalk. Available at:
+https://cpentalk.com/1177/inspections-effective-discovering-discovered-inspections (Accessed:02 December 2021)
+
+cpentalk. Available at:
+https://cpentalk.com/1178/relationships-cyclomatic-complexity-attributes-maintainability (Accessed:02 December 2021)
