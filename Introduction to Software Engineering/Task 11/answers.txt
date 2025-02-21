@@ -1,0 +1,29 @@
+Compulsory Task
+
+A system to control anti-lock braking in a car.
+The most appropriate generic software process model to control anti-lock braking in a car is the Waterfall model. 
+It is a Safety-critical system.
+The analysis and design requirements must schedule without any flaws before implementation of the system for the proper functioning. 
+
+A virtual reality system to support software maintenance. 
+The most appropriate generic software process model for a virtual reality system to support software maintenance is Incremental development. 
+It is not a critical system.
+The requirements of the system will change and cannot be predicted before the implementation and require complex programming for the software.
+
+A university accounting system that replaces an existing system
+The most appropriate generic software process model for the university accounting system that replaces an existing system is the Waterfall model.
+Requirements of this system can be predicted in advance because of the existing system. 
+It is a mission-critical system and the requirements are stable and reusable. 
+
+An interactive travel planning system that helps users plan journeys with the lowest environmental impact.
+The prototype and incremental development model is the appropriate software model. 
+Users requirements may likely to change and fast delivery would be essential to be implemented. 
+The prototype model can save time of development to focus on essential functions to be completed later on. 
+
+Business software systems are usually complex, software intensive, and frequently being changed when business goals or processes are changed.
+It is cheaper and easier to change in an incremental model. The incremental model allows customer input to be implemented quickly to accommodate changing needs.
+Real-time systems usually involve many hardware components which are not easy to change and cannot be incremental. Also real-time systems are usually safety critical which need to be built based on well planned process.
+
+Requirements specification is about determining the user and system requirements of the software system. Requirements modification is to modify the requirement specification based on the reusable components. The modification is necessary because we usually don’t have full control over the reusable components, therefore some work around is necessary.
+
+

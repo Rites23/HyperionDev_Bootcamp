@@ -1,0 +1,6 @@
+The code is not exactly readable as is. It makes use of the Math.random function asking the user 5 simple random substraction equations. 
+The numbers in the equation will all be within 10. 
+This is done in a while loop. It provides the output according to what the user has entered. 
+
+Once the code runs we determine the above. It does a substraction loop. If you enter an incorrect answer it will notify you 
+and vice versa as well. 

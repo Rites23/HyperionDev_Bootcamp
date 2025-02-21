@@ -1,0 +1,23 @@
+Compulsory Task
+
+1. Potential problematic situations are in brackets []
+
+   Individuals and interactions over processes and tools [egos, incompetent, individuals on the team, bad relationships]
+
+   Working software over comprehensive documentation ['skills walkout' i.e. team changing, low level of competence creating too many errors that are hard to track]
+
+   Customer collaboration over contract negotiation [relationships breakdown]
+
+   Responding to change over following a plan [transient and circular change]
+
+2. Agile is a team driven iterative approach to development where the users and product owner are constantly involved with the development team during the entire project life cycle.
+   Uses simple adaptable processes.
+   Methodologies include Extreme Programming (XP), Scrum, Crystal, Dynamic Systems, Development Method (DSDM), Lean Development, Feature-Driven Development (FDD)
+
+3. The world is always changing; communication gaps between users and developers.
+
+4. Test-first development requires a clear relationship between system requirements and the code implementing the corresponding requirements.
+   The task implementers have to thoroughly understand the specifications so that they can write tests for the system.
+   Sometimes the programmers will take shortcuts writing tests. 
+   
+   
