@@ -1,0 +1,75 @@
+● What is an interface in Java and why would you, as a software developer, use interfaces?
+ 
+  Like a class, an interface can have methods and variables, but the methods declared in an interface are by default abstract 
+  (only method signature, no body).  
+
+  Interfaces specify what a class must do and not how. It is the blueprint of the class.
+  An Interface is about capabilities like a Player may be an interface and any class implementing Player must be able 
+  to (or must implement) move(). So it specifies a set of methods that the class has to implement.
+  If a class implements an interface and does not provide method bodies for all functions specified in the interface, 
+  then the class must be declared abstract.
+   
+  Why do we use interface?  
+   
+  It is used to achieve total abstraction.
+  Since java does not support multiple inheritance in case of class, but by using interface it can achieve multiple inheritance .
+  It is also used to achieve loose coupling.
+  Interfaces are used to implement abstraction. So the question arises why use interfaces when we have abstract classes?
+  The reason is, abstract classes may contain non-final variables, whereas variables in interface are final, public and static.
+   
+● What is the difference between an abstract class and an interface? 
+  
+  An abstract class allows you to create functionality that subclasses can implement or override. 
+  An interface only allows you to define functionality, not implement it. And whereas a class can extend only one abstract class, 
+  it can take advantage of multiple interfaces.
+  
+● Why is abstraction an important concept in software development and what role do interfaces play in abstraction?
+
+  The main purpose of abstraction is hiding the unnecessary details from the users. Abstraction is selecting data from 
+  a larger pool to show only relevant details of the object to the user. It helps in reducing programming complexity and efforts. 
+  It is one of the most important concepts of OOPs.
+  
+● What must a class do in order to implement an interface?
+
+  To declare a class that implements an interface, you include an implements clause in the class declaration. 
+  Your class can implement more than one interface, so the implements keyword is followed by a comma-separated list of 
+  the interfaces implemented by the class.
+
+● What is an abstract method?
+
+  An abstract method is a method inside an abstract class or an interface. It has no body, and one must be defined by a 
+  subclass before it can be instantiated. This allows interface classes that define some common methods, but leave some 
+  to the implementations. 
+
+● Can you instantiate an interface?
+
+  An interface can't be instantiated directly. Its members are implemented by any class or struct that implements the interface. 
+  A class or struct can implement multiple interfaces. A class can inherit a base class and also implement one or more interfaces.  
+  
+● Can you declare a constructor inside an interface? If not, why?
+
+  No, you cannot have a constructor within an interface in Java. From Java8 onwards interfaces allow default methods and static methods. 
+  From Java9 onwards interfaces allow private and private static methods.
+  
+● Can we override an interface method with visibility that is not public?
+  
+  No. We cannot override an interface method if it's visibility is not public. And if it has its visibility as public then you can 
+  override it with the same method signature (i.e., with the same access specifier public) whenever you implement the interface to any class.
+    
+ 
+ References: 
+   
+   geeksforgeeks. Available at:
+   https://www.geeksforgeeks.org/interfaces-in-java/ (Accessed: 03 December 2021)
+   
+   guru99.com. Available at:
+   https://www.guru99.com/java-data-abstraction.html (Accessed: 03 December 2021)
+   
+   Oracle. Available at:
+   https://docs.oracle.com/javase/tutorial/java/IandI/usinginterface.html (Accessed: 03 December 2021)
+   
+   Oracle. Available at:
+   https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html(Accessed: 03 December 2021)
+   
+   Stackoverflow. Available at:
+   https://stackoverflow.com/questions/56685091/can-we-override-an-interface-method-with-visibility-that-is-not-public (Accessed: 03 December 2021)

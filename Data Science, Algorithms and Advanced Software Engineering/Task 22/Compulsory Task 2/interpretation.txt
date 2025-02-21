@@ -1,0 +1,13 @@
+Countries that lie on the fringes of the clusters are more prone to move to the next than countries that are closer to the centroids or 
+means of a particular cluster. This observation however, is dependent on how much the centroids will move from beginning to end (as they are chosen randomly). 
+This observation also excludes the outer fringes of the clusters on the outside of the dataset, in this case, the outer fringes of clusters 3 and 2. 
+I have also noticed in the end that when it comes to the variable values of “Birth Rate” and “Life Expectancy”, countries that fall within a certain range 
+of values, tend to end up in the same clusters. The value range of these pairs per cluster though are not equal. 
+This analysis falls in line with what we said we should achieve in the end, which is high intra-cluster similarity and low inter-cluster similarity.
+
+Reference :
+
+analytics-vidhya. Available at:
+https://www.analyticsvidhya.com/ (Accessed: 17 January 2022)
+
+\

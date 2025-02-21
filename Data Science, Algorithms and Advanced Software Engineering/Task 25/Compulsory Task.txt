@@ -1,0 +1,156 @@
+● What is the difference between process and thread?
+
+A process is a program that has been loaded into memory along with all the
+resources it needs in order to run.
+
+A thread is the unit of execution within a process. A process can have one or
+more threads, but a thread cannot contain a process.
+
+● How do you create a thread in Java and run it?
+
+1. Create a class that implements Runnable.
+
+2. Provide a run method in the Runnable class.
+
+3. Create an instance of the Thread class and pass your Runnable object to its constructor as a parameter.
+   A Thread object is created that can run your Runnable class.
+
+4. Call the Thread object’s start method.
+   The run method of your Runnable object is called and executes in a separate thread.
+   
+● What are the different states of a thread and when do the state transitions
+  occur?
+  
+  New Thread: When a new thread is created, it is in the new state. The thread has not yet started to run when thread 
+  is in this state. When a thread lies in the new state, it's code is yet to be run and hasn't started to execute.
+  
+  Runnable State: A thread that is ready to run is moved to runnable state.
+  
+  Blocked/Waiting state:When a thread is temporarily inactive, then it’s in one of the following states:
+  Blocked
+  Waiting
+  
+  Timed Waiting: A thread lies in timed waiting state when it calls a method with a time out parameter. 
+  A thread lies in this state until the timeout is completed or until a notification is received.
+  
+  Terminated State: A thread terminates because of either of the following reasons:
+  Because it exists normally. This happens when the code of thread has entirely executed by the program.
+  Because there occurred some unusual erroneous event, like segmentation fault or an unhandled exception.
+  
+● What is a daemon thread and what are its use cases?
+  
+  Daemon threads are typically used to perform services for your application/applet (such as loading the "fiddley bits"). 
+  The core difference between user threads and daemon threads is that the JVM will only shut down a program when all user threads 
+  have terminated. Daemon threads are terminated by the JVM when there are no longer any user threads running, including the main thread of execution.  
+  
+● How do you create a daemon thread?
+  
+  Creating a thread as a daemon in Java is as simple as calling the setDaemon() method. A setting of true means the thread is a daemon; 
+  false means it is not. By default, all threads are created with an initial value of false.
+  
+  Example:
+  
+  public class DaemonThreadExample1 extends Thread{
+
+   public void run(){  
+		
+	  // Checking whether the thread is Daemon or not
+	  if(Thread.currentThread().isDaemon()){ 
+	      System.out.println("Daemon thread executing");  
+	  }  
+	  else{  
+	      System.out.println("user(normal) thread executing");  
+          }  
+   }  
+   public static void main(String[] args){  
+	 /* Creating two threads: by default they are 
+	  * user threads (non-daemon threads)
+	  */
+	 DaemonThreadExample1 t1=new DaemonThreadExample1();
+	 DaemonThreadExample1 t2=new DaemonThreadExample1();   
+			 
+	 //Making user thread t1 to Daemon
+        t1.setDaemon(true);
+		     
+        //starting both the threads 
+        t1.start(); 
+        t2.start();  
+   } 
+}
+
+● What is Java Memory Model (JMM)?
+  
+  The Java Memory Model describes how threads in the Java programming language interact through memory. 
+  Together with the description of single-threaded execution of code, the memory model provides the semantics of the Java programming language.
+  
+● What are deadlock, livelock, and starvation? What causes these
+  conditions?
+  
+  A deadlock is a situation that occurs when processes block each other with resource acquisition and makes no further progress. 
+  Livelock is a deadlock-like situation in which processes block each other with a repeated state change yet make no progress. 
+  Starvation is the outcome of a deadlock, livelock, or as a result of continuous resource denial to a process.
+  
+  Starvation can occur due to deadlock, livelock, or caused by another process.
+
+  In the event of a deadlock or a live lock a process competes with another process to acquire the desired resource to complete its task. 
+  However, due to the deadlock or livelock scenario, it failed to acquire the resource and generally starved for the resource.
+
+  Further, it may occur that a process repeatedly gains access to a shared resource or use it for a longer duration while other processes wait for 
+  the same resource. Thus, the waiting processes are starved for the resource by the greedy process.
+  
+● What happens if you don’t override the thread class run() method? 
+
+  If you don’t override the run() method, the compiler will not flash any error and it will execute the run() 
+  method of the thread class that has empty implemented, so therefore there will be no output for this thread.
+
+  Example:
+
+  public class Sample extends Thread  {
+
+	  public static void main(String[] args) {	
+		
+		Thread t = new Thread( new Sample());
+		t.start(); // will create a new thread and call thread class's run() method which has no implementation.
+
+	  }
+    } 
+
+● What is atomic operation and what are atomic classes in the Java Concurrency API?	
+  
+  Atomicity. Atomic operations are those operations that ALWAYS execute together. Either all of them execute together, 
+  or none of them executes. If an operation is atomic, then it cannot be partially complete, either it will be complete, 
+  or not start at all, but will not be incomplete.
+  
+  The most commonly used atomic variable classes in Java are AtomicInteger, AtomicLong, AtomicBoolean, and AtomicReference. 
+  These classes represent an int, long, boolean, and object reference respectively which can be atomically updated.
+  
+● What are Executor and ExecutorService and what are the differences between them?
+
+  Executor just executes stuff you give it. ExecutorService adds startup, shutdown, and the ability to wait for and look at the status of 
+  jobs you've submitted for execution on top of Executor (which it extends).
+  
+  The main difference between Executor, ExecutorService, and Executors class is that Executor is the core interface which is an abstraction for 
+  parallel execution. It separates tasks from execution, this is different from java. lang. It also provides a submit() method which extends Executor.
+  
+● What are Concurrent Collection Classes?
+
+  The concurrent collection APIs of Java provide a range of classes that are specifically designed to deal with concurrent operations. 
+  These classes are alternatives to the Java Collection Framework and provide similar functionality except with the additional support of concurrency.
+   
+   
+   References: 
+   
+   geeksforgeeks. Available at:
+   https://www.geeksforgeeks.org/lifecycle-and-states-of-a-thread-in-java/ (Accessed: 03 December 2021)
+   
+   dummies.com. Available at:
+   https://www.dummies.com/programming/java/how-to-use-the-runnable-interface-in-java-to-create-and-start-a-thread/ (Accessed: 03 December 2021)
+   
+   beginnersbook. Available at:
+   https://beginnersbook.com/2015/01/daemon-thread-in-java-with-example/ (Accessed: 03 December 2021)
+   
+   baeldung. Available at:
+   https://www.baeldung.com/cs/deadlock-livelock-starvation (Accessed: 03 December 2021)
+   
+   interviewsansar. Available at:
+   https://www.interviewsansar.com/must-override-run-method-in-java/ (Accessed: 03 December 2021)

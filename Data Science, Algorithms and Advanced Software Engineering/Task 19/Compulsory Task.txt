@@ -1,0 +1,87 @@
+● What are the differences between supervised and unsupervised machine learning? Explain what you think semi-supervised machine learning is.
+  ○ Write a paragraph on Machine Learning. Try to use your own words
+    (about 8 sentences)
+  
+    Supervised learning is a machine learning approach that’s defined by its use of labeled datasets. 
+    These datasets are designed to train or “supervise” algorithms into classifying data or predicting outcomes accurately. 
+    Using labeled inputs and outputs, the model can measure its accuracy and learn over time.
+  
+    Classification problems use an algorithm to accurately assign test data into specific categories, such as separating apples from oranges. 
+    Or, in the real world, supervised learning algorithms can be used to classify spam in a separate folder from your inbox.
+  
+    Regression is another type of supervised learning method that uses an algorithm to understand the relationship between dependent and independent variables. 
+    Regression models are helpful for predicting numerical values based on different data points, such as sales revenue projections for a given business.  
+  
+    Unsupervised learning uses machine learning algorithms to analyze and cluster unlabeled data sets. 
+    These algorithms discover hidden patterns in data without the need for human intervention (hence, they are “unsupervised”).
+  
+    Clustering is a data mining technique for grouping unlabeled data based on their similarities or differences. 
+    For example, K-means clustering algorithms assign similar data points into groups, where the K value represents the size of the 
+    grouping and granularity. This technique is helpful for market segmentation, image compression, etc.
+  
+    Association is another type of unsupervised learning method that uses different rules to find relationships between variables in a 
+    given dataset. These methods are frequently used for market basket analysis and recommendation engines, along the lines 
+    of “Customers Who Bought This Item Also Bought” recommendations.
+  
+    Dimensionality reduction is a learning technique used when the number of features  (or dimensions) in a given dataset is too high. 
+    It reduces the number of data inputs to a manageable size while also preserving the data integrity. Often, this technique is used 
+    in the preprocessing data stage, such as when autoencoders remove noise from visual data to improve picture quality.
+  
+    Semi-supervised machine learning is a combination of supervised and unsupervised machine learning methods.
+  
+  ○ Write a paragraph on Supervised Learning. Try to use your own
+    words (about 5 sentences). Also, list at least 4 models in Supervised Learning.
+	
+	Supervised learning involves learning a function that maps an input to an output based on example input-output pairs.
+    For example, if I had a dataset with two variables, age (input) and height (output), I could implement a supervised learning model 
+	to predict the height of a person based on their age.
+	
+	Decision Tree 
+	Random Forest
+	Neural Network
+	Naive Bayes
+	
+  ○ Write a paragraph on Unsupervised Learning. Try to use your own
+    words (about 5 sentences). Also, list at least 2 models in Unsupervised Learning.
+	
+	Unlike supervised learning, unsupervised learning is used to draw inferences and find patterns from input data without references 
+	to labeled outcomes. Two main methods used in unsupervised learning include clustering and dimensionality reduction.
+	
+	Clustering is an unsupervised technique that involves the grouping, or clustering, of data points. It’s frequently used for customer 
+	segmentation, fraud detection, and document classification.
+	
+	Common clustering techniques include k-means clustering, hierarchical clustering, mean shift clustering, and density-based clustering. 
+	While each technique has a different method in finding clusters, they all aim to achieve the same thing.
+	
+  ○ Write a paragraph on 1 interesting trend in Artificial Intelligence
+    that interests you. E.g. self-driving cars, music production, voice
+    recognition, handwritten signature verification, computational
+    biology, etc.
+	
+	Face Detection and Recognition Technology
+    Virtual filters on Snapchat and the FaceID unlock on iPhones are two examples of AI applications today. 
+	While the former uses face detection technology to identify any face, the latter relies on face recognition.
+	
+	An example:
+	
+	The TrueDepth camera on the Apple devices projects over 30,000 invisible dots to create a depth map of your face. 
+	It also captures an infrared image of the user’s face.
+	After that, a machine learning algorithm compares the scan of your face with what a previously enrolled facial data. 
+	That way, it can determine whether to unlock the device or not.
+	It automatically adapts to changes in the user’s appearance. These include wearing cosmetic makeup, growing facial hair, 
+	or wearing hats, glasses, or contact lens.
+	
+	References: 
+	
+	Edgy. Available at:
+	https://edgy.app/examples-of-artificial-intelligence (Accessed:02 December 2021)
+	
+	IBM. Available at:
+	https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning (Accessed:02 December 2021)
+	
+	Towardsdatascience. Available at:
+	https://towardsdatascience.com/all-machine-learning-models-explained-in-6-minutes-9fe30ff6776a (Accessed:02 December 2021)
+  
+  
+  
+  
