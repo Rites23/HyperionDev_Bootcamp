@@ -1,0 +1,50 @@
+Why is it not necessary for a program to be completely free of defects before it is delivered to its customers?
+Why can testing only detect the presence of errors, not their absence?
+
+There are many things that can go wrong with a system. Unless the developer
+can guarantee that all systems will be perfect, the developer also cannot 
+guarantee the program in the sense of operation. In a worse case scenario,
+the programs today are way too complicated and large for a company to catch everything.
+It is not that "It is not necessary for a program to be completely free of defects before
+it is delivered to its customers because it is not always (99% of the time) possible to 
+deliver a defect free product to the customer which is of 100% quality". There are numerous other 
+reasons for this such as huge and complex applications, timelines, resource constraint, frequent change control, 
+lack of technology knowledge, and finally human error. Anyone of these errors can effect the final product. 
+
+There are two main reasons that “testing can only detect the presence of errors, not their absence”:
+ 1. The goal of software testing is to observe the software behavior to meet its requirement expectation.
+ 2. Testing is a set of activities where the tester tries to make the software behave anomalous in order to 
+    detect a defect or anomaly to be later fixed.
+
+Pros and Cons of Testing being carried out by the developers themselves:
+
+Pros: 
+•	The team understands the problems that their program is tackling, and thus understands the problems that it might run into. 
+•	They can write tests that accurately reflect the programs' future challenges. 
+•	An outsider team may try to verify the code, without fully understanding the initial problem.
+•	Testing becomes easy as they know the areas of code which need testing.
+•	Saves time, as they need not learn about the code.
+
+Cons: 
+•	Depending on the team, and often pressured by time, they could write test units that insufficiently test the quality of the code, 
+    or are unable to think of challenges to their code beyond the solution that they've already tested.
+•	One may not easily identify their own errors.
+•	Testing may be compromised so as to reduce their error rate.
+•	Increases the effort of developers and may compromise with quality.
+
+Ethics of testing the system until the testing budget is exhausted are:
+
+•	The testing may not be done satisfactorily.
+•	Only few methods of testing are covered with the available budget.
+•	Only few areas of code may be tested because of the running budget.  So there may be some uncovered errors.
+•	The testing may not be completed in a satisfactory way by the time the budget exhausts.
+•	Due to improper testing, errors may occur after delivering the project.
+•	It increases the costs of error correction and maintenance.
+•	Affect the reputation and goodwill of the product and vendor.
+•	The customer may not be satisfied with the product as he may not get a quality product.
+
+
+
+
+
+
